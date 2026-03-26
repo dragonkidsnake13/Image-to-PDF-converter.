@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>File Converter</h1>
+    <p>Convert Images ↔ PDFs and Compress Images</p>
+
+    <div class="card">
+      <h2>Image to PDF</h2>
+      <input type="file" id="imageToPdfInput" accept="image/*">
+      <button onclick="convertImageToPdf()">Convert</button>
+    </div>
+
+    <div class="card">
+      <h2>PDF to Image</h2>
+      <input type="file" id="pdfToImageInput" accept="application/pdf">
+      <button onclick="convertPdfToImage()">Convert</button>
+    </div>
+
+    <div class="card">
+      <h2>Compress Image</h2>
+      <input type="file" id="compressImageInput" accept="image/*">
+      <button onclick="compressImage()">Compress</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
